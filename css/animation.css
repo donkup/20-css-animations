@@ -1,0 +1,40 @@
+body {
+  height: 100vh;
+}
+
+.square {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  animation-name: susiapvalinti;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes susiapvalinti {
+  0% {
+    border-radius: 0;
+  }
+  25% {
+    background-color: lightgoldenrodyellow;
+    border: 2.5px dotted red;
+  }
+  50% {
+    background-color: lightblue;
+    border: 5px dotted red;
+  }
+  75% {
+    background-color: lightskyblue;
+    border: 7.5px dotted red;
+  }
+
+  100% {
+    border: 10px dotted red;
+    background-color: blue;
+    border-radius: 50%;
+  }
+}
